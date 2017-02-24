@@ -15,4 +15,7 @@
 <%= link_to 'Back', posts_path %>
 </div>
 
+<%= render partial: "comments/comment", collection: @last_comments %>
+
+
 <%= render "comments/form" %>
