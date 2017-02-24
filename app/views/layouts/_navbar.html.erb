@@ -1,0 +1,14 @@
+
+
+ <ul style="background-color: #e9e9e9" class="nav navbar-nav navbar-right">
+
+	 <% if user_signed_in? %>
+		 <span style="color:blue; margin: 50px; ">Hola <%= current_user.name%></span>
+	 <li> <a href="<%= destroy_user_session_path %>" data-method='delete'>
+	 Salir
+	 </a></li>
+	 <% else %>
+	 <li><a href="<%= new_user_session_path %>"> Login </a></li>
+	 <li><a href="<%= new_user_registration_path %>"> Registrarse </a></li>
+	 <% end %>
+</ul>
