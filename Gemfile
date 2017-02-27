@@ -13,6 +13,8 @@ gem 'pg', '~> 0.18'
 
 gem 'pry-rails'
 
+gem 'railroady'
+
 gem 'devise'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
